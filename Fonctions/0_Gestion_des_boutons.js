@@ -1,5 +1,14 @@
 import {globalVar} from 'https://robertlerobot.github.io/excel-complement/taskpane.5272dba06bb261272269.js';
 
+function showSection(sectionId) {
+  document.querySelectorAll("section").forEach((section) => {
+      section.style.display = "none";
+  });
+
+  // Affiche la section souhaitée
+  document.getElementById(sectionId).style.display = "flex";
+}
+
 export async function handleClick(event) {
   globalVar.debug = true;
 
