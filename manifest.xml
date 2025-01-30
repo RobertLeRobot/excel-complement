@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>7b957cf7-be9f-41f1-bf57-9e9ee1dc03f4</Id>
+  <Version>1.0.0.9	</Version>
+  <ProviderName>Actuelia</ProviderName>
+  <DefaultLocale>fr-FR</DefaultLocale>
+  <DisplayName DefaultValue="PlanningActuelia"/>
+  <Description DefaultValue="Planning des collaborateurs Actuelia."/>
+  <IconUrl DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-64.png"/>
+  <SupportUrl DefaultValue="https://actuelia.fr"/>
+  <AppDomains>
+    <AppDomain>https://robertlerobot.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://robertlerobot.github.io/excel-complement/taskpane.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Workbook">
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="GetStarted.Title"/>
+            <Description resid="GetStarted.Description"/>
+            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+          </GetStarted>
+          <FunctionFile resid="Commands.Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="CommandsGroup">
+                <Label resid="CommandsGroup.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16x16"/>
+                  <bt:Image size="32" resid="Icon.32x32"/>
+                  <bt:Image size="80" resid="Icon.80x80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TaskpaneButton">
+                  <Label resid="TaskpaneButton.Label"/>
+                  <Supertip>
+                    <Title resid="TaskpaneButton.Label"/>
+                    <Description resid="TaskpaneButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.16x16" DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://robertlerobot.github.io/excel-complement/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://robertlerobot.github.io/excel-complement/taskpane.html"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="GetStarted.Title" DefaultValue="Chargement du complément PlanningActuelia"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="Complément Actuelia"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Afficher le volet Planning"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="GetStarted.Description" DefaultValue="Chargement du complément réalisé. Allez sur l'onglet 'Acceuil' et cliquez sur 'Afficher le Volet'"/>
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Appuyer pour modifier le planning"/>
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>
