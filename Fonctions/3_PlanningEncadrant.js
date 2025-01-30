@@ -1,5 +1,5 @@
 
-import {globalVar, ajoutModif} from './taskpane.js';
+import {globalVar, ajoutModif} from './taskpane.5272dba06bb261272269.js';
 
 // Deb Modif Encadrant
 

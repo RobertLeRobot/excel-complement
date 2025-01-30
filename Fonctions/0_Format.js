@@ -1,6 +1,6 @@
 // Deb Format
 
-import {globalVar} from './taskpane.js';
+import {globalVar} from './taskpane.5272dba06bb261272269.js';
 
 export async function formatProtection() {
   await Excel.run(async (context) => {

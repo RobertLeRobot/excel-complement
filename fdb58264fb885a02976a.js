@@ -360,34 +360,34 @@ import {
     ActivationPlanningConsultant,
     modifPlanningConsultant,
     ChgtFeuilleConsultant
-} from "https://mordekus.github.io/excel-complement/Fonctions/1_ModifConsultants.js";
+} from "https://robertlerobot.github.io/excel-complement/Fonctions/1_ModifConsultants.js";
 import {
     ActivationPlanningMission,
     modifPlanningMission,
     ChgtFeuilleMission
-} from "https://mordekus.github.io/excel-complement/Fonctions/2_ModifMissions.js";
+} from "https://robertlerobot.github.io/excel-complement/Fonctions/2_ModifMissions.js";
 import {
     ActivationPlanningGlobal,
     ChgtFeuilleGlobal
-} from "https://mordekus.github.io/excel-complement/Fonctions/3_PlanningGlobal.js";
+} from "https://robertlerobot.github.io/excel-complement/Fonctions/3_PlanningGlobal.js";
 import {
     ActivationPlanningEncadrant,
     ChgtFeuilleEncadrant
-} from "https://mordekus.github.io/excel-complement/Fonctions/3_PlanningEncadrant.js";
+} from "https://robertlerobot.github.io/excel-complement/Fonctions/3_PlanningEncadrant.js";
 import {
     formatProtection,
     formatMissions,
     formatConsultants,
     formatSemaine,
     applyNewRangeToConditionnalFormat
-} from "https://mordekus.github.io/excel-complement/Fonctions/0_Format.js";
+} from "https://robertlerobot.github.io/excel-complement/Fonctions/0_Format.js";
 import {
     handleClick,
     nouvelleMission,
     suppressionMission,
     affectationMission,
     affectationConsultant
-} from "https://mordekus.github.io/excel-complement/Fonctions/0_Gestion_des_boutons.js";
+} from "https://robertlerobot.github.io/excel-complement/Fonctions/0_Gestion_des_boutons.js";
 export var globalVar = {
     debug: !0,
     isProcessing: !1,
