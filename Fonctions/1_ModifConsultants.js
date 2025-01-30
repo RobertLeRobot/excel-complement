@@ -1,5 +1,5 @@
 
-import {globalVar, ajoutModif} from './taskpane.5272dba06bb261272269.js';
+import {globalVar, ajoutModif} from 'https://robertlerobot.github.io/excel-complement/taskpane.5272dba06bb261272269.js';
 import {formatProtection, formatConsultants, formatSemaine} from "./0_Format.js"
 
 

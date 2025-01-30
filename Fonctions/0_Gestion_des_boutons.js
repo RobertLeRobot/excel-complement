@@ -1,4 +1,4 @@
-import {globalVar} from './taskpane.5272dba06bb261272269.js';
+import {globalVar} from 'https://robertlerobot.github.io/excel-complement/taskpane.5272dba06bb261272269.js';
 
 export async function handleClick(event) {
   globalVar.debug = true;
