@@ -78,7 +78,7 @@
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Chargement du complément réalisé. Allez sur l'onglet 'Acceuil' et cliquez sur 'Afficher le Volet'"/>
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane"/>
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Cliquer pour ouvrir le planificateur"/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
