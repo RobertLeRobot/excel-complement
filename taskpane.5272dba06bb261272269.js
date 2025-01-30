@@ -37,7 +37,7 @@
             enumerable: !0,
             get: t[n]
         })
-    }, c.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), c.p = "https://actuelia.sharepoint.com/sites/Planning/Documents%20partages/Planning%2020_01/Planning%20Actuelia/", c.b = document.baseURI || self.location.href, (() => {
+    }, c.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), c.p = "https://robertlerobot.github.io/excel-complement/", c.b = document.baseURI || self.location.href, (() => {
         function e(t) {
             return e = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
                 return typeof e
