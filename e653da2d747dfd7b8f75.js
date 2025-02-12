@@ -361,7 +361,7 @@ import { formatProtection, formatMissions, formatConsultants, formatSemaine, app
 import { handleClick, nouvelleMission, suppressionMission, affectationMission, affectationConsultant } from "./0_Gestion_des_boutons.js";
 export var globalVar = { debug: !0, isProcessing: !1, nbExecModifConsultant: 1, nbExecModifMission: 1, nbExecModifEncadrant: 1, nbExecModifGlobal: 1 };
 function openSharePointFile(e) {
-    var t = "ms-excel:ofe|u|" + encodeURIComponent("https://votresite.sharepoint.com/sites/votresite/Shared%20Documents/votrefichier.xlsx");
+    var t = "ms-excel:ofe|u|" + encodeURIComponent("https://actuelia.sharepoint.com/sites/Planning/Documents partages/Planning 20_01/Planning - v11.xlsx");
     (window.location.href = t),
         setTimeout(function () {
             Office.context.ui.displayDialogAsync(window.location.origin + "/taskpane.html", { height: 50, width: 30 }, function (e) {
