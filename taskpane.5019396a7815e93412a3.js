@@ -5627,7 +5627,7 @@
             }
             me.debug && console.log(me.isProcessing),
                 Office.actions.associate("openSharePointFile", function (e) {
-                    var t = "ms-excel:ofe|u|" + encodeURIComponent("https://actuelia.sharepoint.com/sites/Planning/Documents partages/Planning 20_01/Planning - v11.xlsx");
+                    var t = "ms-excel:ofe|u|" + encodeURIComponent("https://actuelia.sharepoint.com/:x:/s/Planning/ETcP8p3lCrFKjqOO6SH_dDIBDVEJzRLLUCbO9dgVm_frKQ?e=7nqyc2");
                     (window.location.href = t),
                         setTimeout(function () {
                             Office.context.ui.displayDialogAsync(window.location.origin + "/taskpane.html", { height: 50, width: 30 }, function (e) {
