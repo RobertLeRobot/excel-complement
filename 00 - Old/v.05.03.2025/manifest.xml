@@ -6,11 +6,11 @@
            xsi:type="TaskPaneApp">
     
     <Id>7b957cf7-be9f-41f1-bf57-9e9ee1dc03f4</Id>
-    <Version>1.0.0.18</Version>
+    <Version>1.0.0.17</Version>
     <ProviderName>Actuelia</ProviderName>
     <DefaultLocale>fr-FR</DefaultLocale>
     
-    <DisplayName DefaultValue="Planning Actuelia"/>
+    <DisplayName DefaultValue="PlanningActuelia"/>
     <Description DefaultValue="Planning des collaborateurs Actuelia."/>
     
     <IconUrl DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-32.png"/>
@@ -26,7 +26,14 @@
     <Hosts>
         <Host Name="Workbook"/>
     </Hosts>
-    
+
+    <Requirements>
+        <Sets DefaultMinVersion="1.1">
+            <Set Name="SharedRuntime" MinVersion="1.1"/>
+        </Sets>
+    </Requirements>    
+
+
     <DefaultSettings>
         <SourceLocation DefaultValue="https://robertlerobot.github.io/excel-complement/taskpane.html"/>
     </DefaultSettings>
@@ -38,7 +45,12 @@
         
         <Hosts>
             <Host xsi:type="Workbook">
-                <DesktopFormFactor>
+
+               <Runtimes>
+                    <Runtime resid="Taskpane.Url" lifetime="long"/>
+               </Runtimes>
+ 
+               <DesktopFormFactor>
                     
                     <GetStarted>
                         <Title resid="GetStarted.Title"/>
@@ -46,7 +58,7 @@
                         <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
                     </GetStarted>
                     
-                    <FunctionFile resid="Commands.Url"/>
+                    <FunctionFile resid="Taskpane.Url"/>
                     
                     <ExtensionPoint xsi:type="PrimaryCommandSurface">
                         <OfficeTab id="TabHome">
@@ -112,10 +124,10 @@
             </bt:Urls>
             
             <bt:ShortStrings>
-                <bt:String id="GetStarted.Title" DefaultValue="Chargement du complément Planning Actuelia"/>
-                <bt:String id="CommandsGroup.Label" DefaultValue="Planning Actuelia"/>
-                <bt:String id="TaskpaneButton.Label" DefaultValue="Modifier le Planning"/>
-                <bt:String id="OpenFileButton.Label" DefaultValue="Ouvrir le Planning"/>
+                <bt:String id="GetStarted.Title" DefaultValue="Chargement du complément PlanningActuelia"/>
+                <bt:String id="CommandsGroup.Label" DefaultValue="Complément Actuelia"/>
+                <bt:String id="TaskpaneButton.Label" DefaultValue="Afficher le volet Planning"/>
+                <bt:String id="OpenFileButton.Label" DefaultValue="Ouvrir fichier SharePoint"/>
             </bt:ShortStrings>
             
             <bt:LongStrings>
