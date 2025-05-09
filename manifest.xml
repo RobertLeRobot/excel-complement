@@ -79,7 +79,7 @@
 
                                 <!-- ✅ Bouton unique -->
                                 <Control xsi:type="Button" id="PlanningMainButton">
-                                    <Label resid="TaskpaneButton.Label" />
+                                    <Label resid="OpenFileButton.Label" />
                                     <Supertip>
                                         <Title resid="OpenFileButton.Label" />
                                         <Description resid="OpenFileButton.Tooltip" />
