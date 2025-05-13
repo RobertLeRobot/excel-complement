@@ -7,7 +7,7 @@
   xsi:type="TaskPaneApp">
 
   <Id>7b957cf7-be9f-41f1-bf57-9e9ee1dc03f4</Id>
-  <Version>1.0.0.30</Version>
+  <Version>1.0.0.31</Version>
   <ProviderName>Actuelia</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
 
@@ -69,14 +69,12 @@
                 <!-- Label du groupe -->
                 <Label resid="CommandsGroup.Label"/>
 
-                <!-- 🔄 Icon requis avant les Control -->
                 <Icon>
                   <bt:Image size="16" resid="Icon.16x16"/>
                   <bt:Image size="32" resid="Icon.32x32"/>
                   <bt:Image size="80" resid="Icon.80x80"/>
                 </Icon>
 
-                <!-- Votre bouton -->
                 <Control xsi:type="Button" id="OpenPlanningButton">
                   <Label resid="OpenFileButton.Label"/>
                   <Supertip>
@@ -88,9 +86,9 @@
                     <bt:Image size="32" resid="Icon.32x32"/>
                     <bt:Image size="80" resid="Icon.80x80"/>
                   </Icon>
-		  <Action xsi:type="ExecuteFunction">
-    		  	<FunctionName>HandlePlanningButtonClick</FunctionName>
-                  </Action>
+		  <Action xsi:type="ShowTaskpane">
+		    <TaskpaneId>Office.AutoShowTaskpaneWithDocument</TaskpaneId>
+		    <SourceLocation resid="Taskpane.Url"/>
                 </Control>
 
               </Group>
