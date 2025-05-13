@@ -21,6 +21,7 @@
 
   <AppDomains>
     <AppDomain>https://robertlerobot.github.io</AppDomain>
+    <AppDomain>https://actuelia.sharepoint.com</AppDomain>
   </AppDomains>
 
   <Hosts>
@@ -42,7 +43,7 @@
 
   <VersionOverrides
     xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
-    xsi:type="VersionOverridesV1_0">
+    xsi:type="VersionOverridesV1_1">
 
     <Hosts>
       <Host xsi:type="Workbook">
