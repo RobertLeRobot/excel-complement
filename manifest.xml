@@ -66,7 +66,7 @@
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="CommandsGroup">
-                <!-- Label du groupe -->
+
                 <Label resid="CommandsGroup.Label"/>
 
                 <Icon>
@@ -108,7 +108,7 @@
       </bt:Images>
 
       <bt:Urls>
-        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+        <bt:Url id="GetStarted.LearnMoreUrl"  DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
         <bt:Url id="Commands.Url"             DefaultValue="https://robertlerobot.github.io/excel-complement/commands.html"/>
         <bt:Url id="Taskpane.Url"             DefaultValue="https://robertlerobot.github.io/excel-complement/commands.html"/>
       </bt:Urls>
