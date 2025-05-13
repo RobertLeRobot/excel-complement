@@ -1,0 +1,1 @@
+(()=>{"use strict";Office.onReady((function(){console.log("Complément Planning Actuelia prêt."),console.log("PlanningActuelia"),Office.context.requirements.isSetSupported("ExcelApi","1.7")&&(Office.context.ui.taskPaneStatus="Ready",Office.context.document.settings.set("AddinReady",!0),Office.context.document.settings.saveAsync())}))})();

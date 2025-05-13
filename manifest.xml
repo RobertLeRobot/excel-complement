@@ -17,7 +17,6 @@
   <IconUrl               DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-64.png"/>
 
-
   <SupportUrl DefaultValue="mailto:39a83b1d.actuelia.fr@emea.teams.ms"/>
 
   <AppDomains>
