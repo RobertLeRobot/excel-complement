@@ -17,6 +17,7 @@
   <IconUrl               DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-64.png"/>
 
+
   <SupportUrl DefaultValue="mailto:39a83b1d.actuelia.fr@emea.teams.ms"/>
 
   <AppDomains>
@@ -48,7 +49,6 @@
     <Hosts>
       <Host xsi:type="Workbook">
 
-        <!-- runtime long -->
         <Runtimes>
           <Runtime resid="Commands.Url" lifetime="long"/>
         </Runtimes>
@@ -63,12 +63,20 @@
 
           <FunctionFile resid="Commands.Url"/>
 
-          <!--  → Bouton manuel pour ouvrir le volet ET lancer la logique -->
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="CommandsGroup">
+                <!-- Label du groupe -->
                 <Label resid="CommandsGroup.Label"/>
 
+                <!-- 🔄 Icon requis avant les Control -->
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16x16"/>
+                  <bt:Image size="32" resid="Icon.32x32"/>
+                  <bt:Image size="80" resid="Icon.80x80"/>
+                </Icon>
+
+                <!-- Votre bouton -->
                 <Control xsi:type="Button" id="OpenPlanningButton">
                   <Label resid="OpenFileButton.Label"/>
                   <Supertip>
@@ -81,7 +89,6 @@
                     <bt:Image size="80" resid="Icon.80x80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <!-- ouvre automatiquement le volet -->
                     <TaskpaneId>Office.AutoShowTaskpaneWithDocument</TaskpaneId>
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
@@ -101,16 +108,19 @@
         <bt:Image id="Icon.32x32" DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-32.png"/>
         <bt:Image id="Icon.80x80" DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-80.png"/>
       </bt:Images>
+
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Commands.Url" DefaultValue="https://robertlerobot.github.io/excel-complement/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://robertlerobot.github.io/excel-complement/commands.html"/>
+        <bt:Url id="Commands.Url"             DefaultValue="https://robertlerobot.github.io/excel-complement/commands.html"/>
+        <bt:Url id="Taskpane.Url"             DefaultValue="https://robertlerobot.github.io/excel-complement/commands.html"/>
       </bt:Urls>
+
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title"     DefaultValue="Chargement du complément Planning Actuelia"/>
         <bt:String id="CommandsGroup.Label"  DefaultValue="Planning Actuelia"/>
         <bt:String id="OpenFileButton.Label" DefaultValue="Ouvrir/Modifier le Planning"/>
       </bt:ShortStrings>
+
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Chargement du complément réalisé. Cliquez sur 'Ouvrir/Modifier' pour lancer le planning."/>
         <bt:String id="OpenFileButton.Tooltip" DefaultValue="Ouvrir ou modifier le planning depuis SharePoint"/>
