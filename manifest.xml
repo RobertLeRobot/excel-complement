@@ -44,7 +44,7 @@
 
   <VersionOverrides
     xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
-    xsi:type="VersionOverridesV1_1">
+    xsi:type="VersionOverridesV1_0">
 
     <Hosts>
       <Host xsi:type="Workbook">
