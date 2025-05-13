@@ -89,6 +89,7 @@
 		  <Action xsi:type="ShowTaskpane">
 		    <TaskpaneId>Office.AutoShowTaskpaneWithDocument</TaskpaneId>
 		    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
                 </Control>
 
               </Group>
