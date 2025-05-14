@@ -12,7 +12,7 @@
     <IconUrl DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-32.png" />
     <HighResolutionIconUrl DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-64.png" />
 
-    <SupportUrl DefaultValue="mailto:39a83b1d.actuelia.fr@emea.teams.ms" />
+    <SupportUrl DefaultValue="mailto:1b1a4480.actuelia.fr@emea.teams.ms" />
 
     <AppDomains>
         <AppDomain>https://robertlerobot.github.io</AppDomain>
