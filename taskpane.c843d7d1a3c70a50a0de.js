@@ -3958,7 +3958,7 @@
                                 e.next = 9;
                                 break
                             }
-                            console.log("🔗 Bouton Ouvrir le planning cliqué"), window.open("ms-excel:ofe|u|https://actuelia.sharepoint.com/:x:/r/sites/Planning/_layouts/15/Doc.aspx?sourcedoc=%7BC220647B-6855-4B92-BCE5-6BE318279806%7D&file=Planning%20-%20v11.xlsx&action=default", "_blank"), e.next = 15;
+                            console.log("🔗 Bouton Ouvrir le planning cliqué"), window.open("ms-excel:ofe|u|https://actuelia.sharepoint.com/:x:/r/sites/Planning/_layouts/15/Doc.aspx?sourcedoc=%7BB2D3EAFD-27C3-4815-A36C-791752E43822%7D&file=Planning%20-%20v11.xlsx&action=default&mobileredirect=true", "_blank"), e.next = 15;
                             break;
                         case 9:
                             if ("btn-AjoutMission" != n) {
