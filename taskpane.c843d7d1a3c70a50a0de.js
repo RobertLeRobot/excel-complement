@@ -909,7 +909,7 @@
                                             case 17:
                                                 return e.next = 19, n.sync();
                                             case 19:
-                                                return s = "B".concat(a.rowIndex + 1, ":").concat(i.address), xe.debug && (console.log("modifMissionsRange :", a.address), console.log("globalVar.debug sRange: ", s)), u = o.getRange(s), e.next = 24, u.load("address");
+                                                return s = "A".concat(a.rowIndex + 1, ":").concat(i.address), xe.debug && (console.log("modifMissionsRange :", a.address), console.log("globalVar.debug sRange: ", s)), u = o.getRange(s), e.next = 24, u.load("address");
                                             case 24:
                                                 return e.next = 26, n.sync();
                                             case 26:
@@ -1031,7 +1031,7 @@
                                             case 18:
                                                 return e.next = 20, n.sync();
                                             case 20:
-                                                return s = "B".concat(a.rowIndex + 1, ":").concat(c.address), xe.debug && (console.log("modifMissionsRange :", a.address), console.log("globalVar.debug sRange: ", s)), u = o.getRange(s), e.next = 25, u.load("address");
+                                                return s = "A".concat(a.rowIndex + 1, ":").concat(c.address), xe.debug && (console.log("modifMissionsRange :", a.address), console.log("globalVar.debug sRange: ", s)), u = o.getRange(s), e.next = 25, u.load("address");
                                             case 25:
                                                 return e.next = 27, n.sync();
                                             case 27:
