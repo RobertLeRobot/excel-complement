@@ -720,7 +720,7 @@
                                     return t().wrap((function(e) {
                                         for (;;) switch (e.prev = e.next) {
                                             case 0:
-                                                return xe.debug = !1, a = r.workbook, i = a.worksheets.getItem(n), c = "3.Recap" === n ? 1 : 2, i.protection.unprotect(), s = i.getRange("C".concat(o, ":XFD").concat(o)).getUsedRange(), e.next = 8, s.load("values");
+                                                return xe.debug = !1, a = r.workbook, i = a.worksheets.getItem(n), c = "3. Recap" === n ? 1 : 2, i.protection.unprotect(), s = i.getRange("C".concat(o, ":XFD").concat(o)).getUsedRange(), e.next = 8, s.load("values");
                                             case 8:
                                                 return e.next = 10, r.sync();
                                             case 10:
