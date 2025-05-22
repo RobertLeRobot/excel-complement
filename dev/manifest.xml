@@ -7,11 +7,11 @@
   xsi:type="TaskPaneApp">
 
   <Id>6c306280-3bff-4cbd-80cb-98932de06344</Id>
-  <Version>1.0.1.0</Version>
+  <Version>1.0.1.1</Version>
   <ProviderName>Actuelia</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
 
-  <DisplayName  DefaultValue="Planning Actuelia (dev)"/>
+  <DisplayName  DefaultValue="Planning (dev)"/>
   <Description  DefaultValue="Planning des collaborateurs Actuelia."/>
 
   <IconUrl               DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-32.png"/>
