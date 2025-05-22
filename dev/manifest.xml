@@ -6,12 +6,12 @@
   xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
   xsi:type="TaskPaneApp">
 
-  <Id>7b957cf7-be9f-41f1-bf57-9e9ee1dc03f4</Id>
-  <Version>1.0.0.33</Version>
+  <Id>6c306280-3bff-4cbd-80cb-98932de06344</Id>
+  <Version>1.0.1.0</Version>
   <ProviderName>Actuelia</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
 
-  <DisplayName  DefaultValue="Planning Actuelia"/>
+  <DisplayName  DefaultValue="Planning Actuelia (dev)"/>
   <Description  DefaultValue="Planning des collaborateurs Actuelia."/>
 
   <IconUrl               DefaultValue="https://robertlerobot.github.io/excel-complement/assets/icon-32.png"/>
