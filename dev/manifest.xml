@@ -7,7 +7,7 @@
   xsi:type="TaskPaneApp">
 
   <Id>40c52626-491a-49d9-8f28-a00a379e11fb</Id>
-  <Version>1.0.1.1</Version>
+  <Version>1.0.1.2</Version>
   <ProviderName>Actuelia</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
 
@@ -77,8 +77,8 @@
                 <Control xsi:type="Button" id="OpenPlanningButton">
                   <Label resid="OpenFileButton.Label"/>
                   <Supertip>
-                    <Title       resid="OpenTaskpane.Label"/>
-                    <Description resid="OpenTaskpane.Tooltip"/>
+                    <Title       resid="OpenFileButton.Label"/>
+                    <Description resid="OpenFileButton.Tooltip"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Icon.16x16"/>
@@ -90,23 +90,6 @@
 		    <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
-
-              <Control xsi:type="Button" id="OpenDirectButton">
-                <Label resid="OpenDirectButton.Label"/>
-                <Supertip>
-                  <Title       resid="OpenDirectButton.Label"/>
-                  <Description resid="OpenDirectButton.Tooltip"/>
-                </Supertip>
-                <Icon>
-                  <bt:Image size="16" resid="Icon.16x16"/>
-                  <bt:Image size="32" resid="Icon.32x32"/>
-                  <bt:Image size="80" resid="Icon.80x80"/>
-                </Icon>
-                <Action xsi:type="ExecuteFunction">
-                  <FunctionName>openPlanningFile</FunctionName>
-                </Action>
-              </Control>
-
 
               </Group>
             </OfficeTab>
@@ -132,13 +115,12 @@
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title"     DefaultValue="Chargement du complément Planning Actuelia"/>
         <bt:String id="CommandsGroup.Label"  DefaultValue="vDev"/>
-        <bt:String id="OpenDirectButton.Label" DefaultValue="Afficher le Bandeau"/>
+        <bt:String id="OpenFileButton.Label" DefaultValue="Ouvrir/Modifier le Planning vDev"/>
       </bt:ShortStrings>
 
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Chargement du complément réalisé. Cliquez sur 'Ouvrir/Modifier' pour lancer le planning."/>
-        <bt:String id="OpenTaskpane.Tooltip" DefaultValue="Ouvrir le Bandeau pour la modification du Planning"/>
-        <bt:String id="OpenDirectButton.Tooltip" DefaultValue="Ouvrir ou modifier le planning depuis SharePoint"/>
+        <bt:String id="OpenFileButton.Tooltip" DefaultValue="Ouvrir ou modifier le planning depuis SharePoint"/>
       </bt:LongStrings>
     </Resources>
 
