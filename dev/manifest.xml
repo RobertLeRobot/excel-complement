@@ -7,7 +7,7 @@
   xsi:type="TaskPaneApp">
 
   <Id>40c52626-491a-49d9-8f28-a00a379e11fb</Id>
-  <Version>1.0.1.0</Version>
+  <Version>1.0.1.1</Version>
   <ProviderName>Actuelia</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
 
@@ -131,7 +131,7 @@
 
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title"     DefaultValue="Chargement du complément Planning Actuelia"/>
-        <bt:String id="CommandsGroup.Label"  DefaultValue="Planning Actuelia"/>
+        <bt:String id="CommandsGroup.Label"  DefaultValue="vDev"/>
         <bt:String id="OpenDirectButton.Label" DefaultValue="Afficher le Bandeau"/>
       </bt:ShortStrings>
 
