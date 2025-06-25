@@ -68,10 +68,10 @@
 
                 <Label resid="CommandsGroup.Label"/>
 
-		<Action xsi:type="ShowTaskpane">
-		  <TaskpaneId>Office.AutoShowTaskpaneWithDocument</TaskpaneId>
-		  <SourceLocation resid="Taskpane.Url"/>
-                </Action>
+		<!--Action xsi:type="ShowTaskpane"-->
+		  <!--TaskpaneId>Office.AutoShowTaskpaneWithDocument</TaskpaneId-->
+		  <!--SourceLocation resid="Taskpane.Url"/-->
+                <!--/Action-->
 
                 <Icon>
                   <bt:Image size="16" resid="Icon.16x16"/>
