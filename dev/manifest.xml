@@ -11,12 +11,11 @@
   <ProviderName>Actuelia</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
 
-  <DisplayName  DefaultValue="vDev"/>
-  <Description  DefaultValue="Planning des collaborateurs Actuelia."/>
+  <DisplayName DefaultValue="vDev"/>
+  <Description DefaultValue="Planning des collaborateurs Actuelia."/>
 
   <IconUrl               DefaultValue="https://robertlerobot.github.io/excel-complement/dev/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://robertlerobot.github.io/excel-complement/dev/assets/icon-64.png"/>
-
   <SupportUrl DefaultValue="mailto:1b1a4480.actuelia.fr@emea.teams.ms"/>
 
   <AppDomains>
@@ -47,13 +46,11 @@
 
     <Hosts>
       <Host xsi:type="Workbook">
-
         <Runtimes>
           <Runtime resid="Commands.Url" lifetime="long"/>
         </Runtimes>
 
         <DesktopFormFactor>
-
           <GetStarted>
             <Title       resid="GetStarted.Title"/>
             <Description resid="GetStarted.Description"/>
@@ -63,16 +60,15 @@
           <FunctionFile resid="Commands.Url"/>
 
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
-            
-            <!-- Onglet principal visible -->
             <OfficeTab id="TabHome">
               <Group id="CommandsGroup">
                 <Label resid="CommandsGroup.Label"/>
 
+                <!-- Bouton principal -->
                 <Control xsi:type="Button" id="OpenPlanningButton">
                   <Label resid="OpenFileButton.Label"/>
                   <Supertip>
-                    <Title       resid="OpenFileButton.Label"/>
+                    <Title resid="OpenFileButton.Label"/>
                     <Description resid="OpenFileButton.Tooltip"/>
                   </Supertip>
                   <Icon>
@@ -85,13 +81,7 @@
                   </Action>
                 </Control>
 
-              </Group>
-            </OfficeTab>
-
-            <!-- Onglet invisible avec faux bouton pour l'ouverture auto -->
-            <OfficeTab id="TabHiddenAuto">
-              <Group id="HiddenGroup">
-                <Label resid="HiddenGroup.Label"/>
+                <!-- Faux bouton invisible pour ouverture auto -->
                 <Control xsi:type="Button" id="HiddenAutoLaunchButton">
                   <Label resid="HiddenAutoLaunchButton.Label"/>
                   <Icon>
@@ -104,11 +94,10 @@
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
+
               </Group>
             </OfficeTab>
-
           </ExtensionPoint>
-
         </DesktopFormFactor>
       </Host>
     </Hosts>
@@ -130,7 +119,6 @@
         <bt:String id="GetStarted.Title"              DefaultValue="Chargement du complément Planning Actuelia"/>
         <bt:String id="CommandsGroup.Label"           DefaultValue="vDev"/>
         <bt:String id="OpenFileButton.Label"          DefaultValue="Ouvrir/Modifier le Planning vDev"/>
-        <bt:String id="HiddenGroup.Label"             DefaultValue=""/>
         <bt:String id="HiddenAutoLaunchButton.Label"  DefaultValue=""/>
       </bt:ShortStrings>
 
