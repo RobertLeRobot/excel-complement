@@ -72,6 +72,7 @@
                   <bt:Image size="80" resid="Icon.80x80"/>
                 </Icon>
 
+<!--
                 <Control xsi:type="Button" id="OpenPlanningButton">
                   <Label resid="OpenFileButton.Label"/>
                   <Supertip>
@@ -87,6 +88,7 @@
                       <FunctionName>openPlanningFile</FunctionName>
                     </Action>
                 </Control>
+-->
 
                 <Control xsi:type="Button" id="ShowTaskpane">
                   <Label resid="ShowTaskpane.Label"/>
@@ -134,13 +136,13 @@
         <bt:String id="GetStarted.Title"     DefaultValue="Chargement du complément Planning Actuelia"/>
         <bt:String id="CommandsGroup.Label"  DefaultValue="vDev"/>
         <bt:String id="OpenFileButton.Label" DefaultValue="Ouvrir/Modifier le Planning vDev"/>
-        <bt:String id="ShowTaskPane.Label"   DefaultValue=" "/>
+        <bt:String id="ShowTaskPane.Label"   DefaultValue="Afficher Planning"/>
       </bt:ShortStrings>
 
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Chargement du complément réalisé. Cliquez sur 'Ouvrir/Modifier' pour lancer le planning."/>
         <bt:String id="OpenFileButton.Tooltip" DefaultValue="Ouvrir ou modifier le planning depuis SharePoint"/>
-        <bt:String id="ShowTaskPane.Tooltip"   DefaultValue=" "/>
+        <bt:String id="ShowTaskPane.Tooltip"   DefaultValue="Afficher Planning"/>
       </bt:LongStrings>
     </Resources>
 
