@@ -7,7 +7,7 @@
   xsi:type="TaskPaneApp">
 
   <Id>40c52626-491a-49d9-8f28-a00a379e11fb</Id>
-  <Version>1.0.1.6</Version>
+  <Version>1.0.1.4</Version>
   <ProviderName>Actuelia</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
 
@@ -97,9 +97,9 @@
                     <Description resid="ShowTaskpane.Tooltip"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16x16"/>
-                    <bt:Image size="32" resid="Icon.32x32"/>
-                    <bt:Image size="80" resid="Icon.80x80"/>
+                    <bt:Image size="16" resid="Icon.16x16_t"/>
+                    <bt:Image size="32" resid="Icon.32x32_t"/>
+                    <bt:Image size="80" resid="Icon.80x80_t"/>
                   </Icon>
                     <Action xsi:type="ShowTaskpane">
                       <TaskpaneId>Office.AutoShowTaskpaneWithDocument</TaskpaneId>
