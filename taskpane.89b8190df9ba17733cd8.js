@@ -12,7 +12,7 @@
                     x: () => t
                 });
                 const t = "PlanningActuelia",
-                    a = "ms-excel:ofe|u|https://actuelia.sharepoint.com/:x:/r/sites/Planning/_layouts/15/Doc.aspx?sourcedoc=%7BB2D3EAFD-27C3-4815-A36C-791752E43822%7D&file=Planning%20-%20v11.xlsx&action=default&mobileredirect=true";
+                    a = "ms-excel:ofe|u|https://actuelia.sharepoint.com/:x:/s/Planning/IQBs2y_15Og1R4psqE4n7prgAWfHJ0nGpJ3Io8TKg7cj6Mk?e=29le5J";
                 async function s(e) {
                     try {
                         await Excel.run(async e => {
