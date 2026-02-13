@@ -573,9 +573,8 @@
             const t = Array.from(document.getElementById("listbox-SuppressionMission").selectedOptions).map(e => e.value);
             E.debug && console.log("lsMissionsASuppr", t), await Excel.run(async a => {
                 a.application.screenUpdating = !1;
-                const s = a.workbook.worksheets.getActiveWorksheet();
-                i.load("name");
-                const l = a.workbook.worksheets.getItem("Affectation des consultants"),
+                const s = a.workbook.worksheets.getActiveWorksheet(),
+                    l = a.workbook.worksheets.getItem("Affectation des consultants"),
                     i = a.workbook.worksheets.getItem("1. Liste des missions"),
                     c = a.workbook.names.getItem("Liste_Missions").getRange();
                 await c.load("values");
