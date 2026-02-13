@@ -7,23 +7,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Planning Actuelia</title>
     <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
-    <script src="https://robertlerobot.github.io/excel-complement/a9816b3cb21342cb3f85.js" type="module"></script>
+    <script src="https://robertlerobot.github.io/excel-complement/e001e713c2b7a130e416.js" type="module"></script>
     <link rel="stylesheet" href="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css" />
     <link href="https://robertlerobot.github.io/excel-complement/dfdaaa4bf146369082c6.css" rel="stylesheet" />
-    <script defer="defer" src="https://robertlerobot.github.io/excel-complement/polyfill.d773241b6e8d674dda2d.js"></script>
-    <script defer="defer" src="https://robertlerobot.github.io/excel-complement/taskpane.6bdf734f716c33fc923a.js"></script>
-    <script defer="defer" src="https://robertlerobot.github.io/excel-complement/commands.5c4bb149ffe4c101855d.js"></script>
+    <script defer="defer" src="https://robertlerobot.github.io/excel-complement/polyfill.3bf6bd8dd04e549dc3ed.js"></script>
+    <script defer="defer" src="https://robertlerobot.github.io/excel-complement/taskpane.89b8190df9ba17733cd8.js"></script>
+    <script defer="defer" src="https://robertlerobot.github.io/excel-complement/commands.e3bab0c36a50a563a68a.js"></script>
 </head>
 
 <body class="ms-font-m ms-welcome ms-Fabric">
     <header class="ms-welcome__header ms-bgColor-neutralLighter"><img width="120" height="120" src="https://robertlerobot.github.io/excel-complement/assets/logo-filled.png" alt="Logo Actuelia" title="Logo" />
         <h1 class="ms-font-xl" style="font-size:26px">Bienvenue dans le planning Actuelia</h1>
     </header>
-    <section id="sec-btn-OpenPlanning" class="section-button" style="display:none"><button id="btn-open-planning" class="fixed-button">Ouvrir le planning</button></section>
-    <section id="sec-btn-AjoutMission" class="section-button"><button id="btn-AjoutMission" class="fixed-button">Ajout Mission</button></section>
+    <section id="sec-btn-OpenPlanning" class="section-button" style="display:none"><button id="btn-open-planning" class="fixed-button"></button></section>
+    <section id="sec-btn-AjoutMission" class="section-button"><button id="btn-AjoutMission" class="fixed-button">Création Mission</button></section>
     <section id="sec-btn-Suppression" class="section-button"><button id="btn-Suppression" class="fixed-button">Suppression Mission</button></section>
     <section id="sec-btn-ModifierAffectationMission" class="section-button"><button id="btn-ModifierAffectationMission" class="fixed-button">Modifier Affectation</button></section>
-    <section id="sec-btn-ModifierAffectationConsultant" class="section-button"><button id="btn-ModifierAffectationConsultant" class="fixed-button">Modifier Mission(s)</button></section>
+    <section id="sec-btn-ModifierAffectationConsultant" class="section-button"><button id="btn-ModifierAffectationConsultant" class="fixed-button">Modifier Affectation</button></section>
     <section id="sec-userForm-AjoutMission" class="section-userForm">
         <h2 class="section-title">Ajout Mission</h2>
         <p>Nommez la mission et choisissez l'encadrant :</p>
@@ -54,12 +54,6 @@
         <p id="texte-AjoutMissionOK"></p>
         <div class="button-container"><button class="button" id="btn-return-4" type="button">Retour</button></div>
         <p class="status" id="status-AjoutMissionOk"></p>
-    </section>
-    <section id="sec-userForm-AjoutMissionDejaExistante" style="display:none;flex-direction:column">
-        <h2 class="section-title">Mission déja existante</h2>
-        <p id="texte-AjoutMissionDejaExistante"></p>
-        <div class="button-container"><button class="button" id="btn-return-12" type="button">Retour</button></div>
-        <p class="status" id="status-AjoutMissionDouble"></p>
     </section>
     <section id="sec-userForm-SuppressionMission" class="section-userForm">
         <h2 class="section-title">Suppression Mission(s)</h2><label for="listbox-SuppressionMission">Choisissez la mission ou les missions à supprimer :</label>
