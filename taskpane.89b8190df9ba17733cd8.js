@@ -258,7 +258,7 @@
                                             let m = f.indexOf(c.values[0][0]);
                                             if (-1 !== m) {
                                                 E.debug && console.log("Index trouvé pour la mission :", m);
-                                                for (let o = 0; o < e.columnCount; o++) d.getRange("D7").getCell(m, n + o - 3).values = [
+                                                for (let o = 0; o < e.columnCount; o++) d.getRange("D7").getCell(m, n + o - 4).values = [
                                                     [l]
                                                 ]
                                             } else E.debug && console.log("Aucun index trouvé pour la mission.");
@@ -738,7 +738,7 @@
             await Excel.run(async e => {
                 E.debug = !1, E.debug && console.log("Activation de la feuille 3. Recap");
                 const o = e.application;
-                o.screenUpdating = !1, o.calculate(), await t("3. Recap", 3), o.screenUpdating = !0, await e.sync(), E.debug = !0
+                o.screenUpdating = !1, o.calculate(), await t("3. Recap", 4), o.screenUpdating = !0, await e.sync(), E.debug = !0
             }).catch(e => {
                 E.debug = !0, console.error("Erreur lors de l'exécution de ActivationRecap :", e), e instanceof OfficeExtension.Error && console.error("Error globalVar.debug info: " + JSON.stringify(e.debugInfo))
             })
