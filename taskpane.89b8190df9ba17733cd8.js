@@ -258,7 +258,7 @@
                                             let m = f.indexOf(c.values[0][0]);
                                             if (-1 !== m) {
                                                 E.debug && console.log("Index trouvé pour la mission :", m);
-                                                for (let o = 0; o < e.columnCount; o++) d.getRange("D7").getCell(m, n + o - 4).values = [
+                                                for (let o = 0; o < e.columnCount; o++) d.getRange("D7").getCell(m, n + o - 3).values = [
                                                     [l]
                                                 ]
                                             } else E.debug && console.log("Aucun index trouvé pour la mission.");
@@ -573,8 +573,9 @@
             const t = Array.from(document.getElementById("listbox-SuppressionMission").selectedOptions).map(e => e.value);
             E.debug && console.log("lsMissionsASuppr", t), await Excel.run(async a => {
                 a.application.screenUpdating = !1;
-                const s = a.workbook.worksheets.getActiveWorksheet(),
-                    l = a.workbook.worksheets.getItem("Affectation des consultants"),
+                const s = a.workbook.worksheets.getActiveWorksheet();
+                i.load("name");
+                const l = a.workbook.worksheets.getItem("Affectation des consultants"),
                     i = a.workbook.worksheets.getItem("1. Liste des missions"),
                     c = a.workbook.names.getItem("Liste_Missions").getRange();
                 await c.load("values");
