@@ -545,6 +545,7 @@
                     c = l.workbook.worksheets.getItem("1. Liste des missions"),
                     r = l.workbook.worksheets.getItem("Affectation des consultants"),
                     d = l.workbook.names.getItem("Liste_Missions").getRange();
+                await i.load("name");
                 await d.load("values");
                 const u = l.workbook.names.getItem("Nb_Missions_Max");
                 await u.load("value");
