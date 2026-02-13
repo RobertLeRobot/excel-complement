@@ -564,7 +564,7 @@
                         ["Affecté à la mission"]
                     ]
                 }
-                c.protection.protect(), r.calculate(), await l.sync(), "2. Planning - Consultant" === i.name ? await n() : "2. Planning - Missions" === i.name && await o(), await e(), l.application.screenUpdating = !0, E.debug = !0, m("sec-userForm-AjoutMissionOk"), document.getElementById("texte-AjoutMissionOK").innerText = "Nom : " + t + "\nEncadrant : " + a + "\nConsultants : " + s
+                c.protection.protect(), r.calculate(), await l.sync(), "2. Planning - Consultant" === i.name ? await n() : "2. Planning - Missions" === i.name && await o(), await e(), l.application.screenUpdating = !0, l.workbook.application.calculate(), E.debug = !0, m("sec-userForm-AjoutMissionOk"), document.getElementById("texte-AjoutMissionOK").innerText = "Nom : " + t + "\nEncadrant : " + a + "\nConsultants : " + s
             }).catch(e => {
                 E.debug = !0, console.error("Erreur lors l'ajout de l'ajout de mission : " + e), e instanceof OfficeExtension.Error && console.error("Error debug info: " + JSON.stringify(e.debugInfo))
             })
